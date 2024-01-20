@@ -1,0 +1,110 @@
+/* about-styles.css */
+
+/* Resetting inherited styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #1c1c1c; /* Dark background for the body */
+    color: #ffffff; /* Light text color for better readability on dark background */
+}
+
+/* Header styling - consistent with the main page */
+header {
+    background: #1f1f1f; /* Darker shade for the header background */
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Navbar Styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block; /* Or use 'flex' on the 'ul' for a flexbox layout */
+    margin-right: 20px; /* Space between the items */
+}
+
+nav a {
+    text-decoration: none;
+    color: #cccccc; /* Lighter text color for links */
+    font-size: 0.9em;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #4da3ff; /* Only text color changes to blue on hover */
+}
+
+
+/* Responsive navbar adjustments */
+@media (max-width: 600px) {
+    nav li {
+        display: block; /* Stack the items vertically on small screens */
+        margin-bottom: 10px; /* Space between the items */
+    }
+}
+
+/* Main content styling for the About page */
+main {
+    padding-top: 80px; /* Offset for fixed header */
+    padding-bottom: 20px;
+    background-color: #3A3F44; /* Matching the body's background color */
+}
+
+/* Increased spacing for section headings and paragraphs */
+section h1,
+section h2 {
+    margin-top: 1em; /* Increased top margin for headings */
+    margin-bottom: 0.5em; /* Increased bottom margin for headings */
+    color: #ffffff; /* Ensuring headings are visible on dark background */
+    font-size: 1.5em; /* Consistent font size with the main page */
+}
+
+section p {
+    margin-top: 0.5em; /* Increased top margin for paragraphs */
+    margin-bottom: 1em; /* Increased bottom margin for paragraphs */
+    line-height: 1.6; /* Improved line height for readability */
+}
+
+/* Footer styling - consistent with the main page */
+footer {
+    background: #1a1a1a; /* Dark background for the footer */
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 600px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Additional responsive styling for the About page as needed */
+}
+footer, .last-element {
+    margin-bottom: 10;
+    padding-bottom: 45%;
+}
+
