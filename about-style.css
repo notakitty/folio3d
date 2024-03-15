@@ -31,6 +31,11 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+header a {
+    text-decoration: none;
+    font-family: 'Yu Gothic UI Semibold', sans-serif;
+    color: #ffffff; /* Light text color */
+}
 /* Navbar Styles */
 nav ul {
     list-style-type: none;
@@ -103,8 +108,26 @@ footer {
 
     /* Additional responsive styling for the About page as needed */
 }
-footer, .last-element {
-    margin-bottom: 10;
-    padding-bottom: 15%;
+/* Footer styling */
+footer {
+    background: #1a1a1a; /* Dark background for the footer */
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
+footer a{
+    font-size: 1.1em;
+    text-decoration: none;
+    color: #cccccc; /* Lighter text color for links */
+    margin-right: 20px;
+}
+
+footer a:hover {
+    color: #ffffff; /* Bright color for link hover state */
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <div class="header-content">
+        <h1><a href="index.html">NOTAKITTY</a></h1>
+        <nav>
+            <ul>
+                <h5><a href="client.html">Client</a></h5>
+                <h5><a href="wip.html">WIP</a></h5>
+                <h5><a href="3d.html">3D</a></h5>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    <div class="grid-container">
+        <!-- Each grid item contains an image from the /assets directory -->
+        <div class="grid-item">
+            <img src="assets/client/card%20(1).png" alt="Brush test with watercolor">
+        </div>
+        <div class="grid-item">
+            <img src="assets/client/card%20(2).png" alt="Flower">
+        </div>
+        <div class="grid-item">
+            <img src="assets/client/card%20(3).png" alt="Orange study">
+        </div>
+        <div class="grid-item">
+            <img src="assets/client/card%20(4).png" alt="Portrait">
+        </div>
+        <div class="grid-item">
+            <img src="assets/client/card%20(5).png" alt="Rainbow shapes">
+        </div>
+        <div class="grid-item">
+            <img src="assets/client/card%20(6).png" alt="Male study">
+        </div>
+        <div class="grid-item">
+            <img src="assets/client/card%20(7).png" alt="Sunny study">
+        </div>
+        <div class="grid-item">
+            <img src="assets/client/card%20(8).png" alt="Violet">
+        </div>
+        <div class="grid-item">
+            <img src="assets/client/card%20(9).png" alt="Waifu fun">
+        </div>
+        <div class="grid-item">
+            <img src="assets/client/card%20(10).png" alt="Waifu fun">
+        </div>
+        <div class="grid-item">
+            <img src="assets/client/card%20(11).png" alt="Waifu fun">
+        </div>
+        <div class="grid-item">
+            <img src="assets/client/card%20(12).png" alt="Waifu fun">
+        </div>
+        <div class="grid-item">
+            <img src="assets/client/card%20(13).png" alt="Waifu fun">
+        </div>
+        <div class="grid-item">
+            <img src="assets/client/card%20(14).png" alt="Waifu fun">
+        </div>
+        <div class="grid-item">
+            <img src="assets/client/card%20(15).png" alt="Waifu fun">
+        </div>
+        <div class="grid-item">
+            <img src="assets/client/card%20(16).png" alt="Waifu fun">
+        </div>
+    </div>
+</main>
+<footer>
+    <p>
+    <h5><a href="https://bsky.app/profile/tastycrayons.bsky.social">BSKY</a></h5>
+    <h5><a href="about.html">About&Contact</a></h5>
+    <span id="copyright">&copy; </span>
+    </p>
+</footer>
+<script>
+    const currentYear = new Date().getFullYear(); // Get the current year
+    document.getElementById('copyright').textContent += currentYear; // Append it to the span
+</script>
+<script src="script.js"></script>
+<div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img" src="">
+    <div id="caption"></div>
+</div>
+</body>
+</html>

@@ -21,30 +21,38 @@
 </header>
 
 <main>
-    <section class="intro">
+    <section class="about">
         <h1>About</h1>
         <p>This page is still under construction, thank you for your patience!</p>
     </section>
 
-    <section class="details">
+    <section class="faqs">
         <h2>FAQs</h2>
         <p>lol still working on this</p>
     </section>
 
-    <section class="team">
+    <section class="contact">
         <h2>Contact</h2>
-        <p>lol still working on this</p>
+        <p>lol still working on this. just use bsky for now : )</p>
     </section>
 
-    <section class="history">
+    <section class="placeholder">
         <h2>Placeholder</h2>
         <p>blah blah blah...</p>
     </section>
 </main>
 
 <footer>
-    <!-- Footer content, similar to the main page. -->
+    <p>
+    <h5><a href="https://bsky.app/profile/tastycrayons.bsky.social">BSKY</a></h5>
+    <h5><a href="about.html">About&Contact</a></h5>
+    <span id="copyright">&copy; </span>
+    </p>
 </footer>
+<script>
+    const currentYear = new Date().getFullYear(); // Get the current year
+    document.getElementById('copyright').textContent += currentYear; // Append it to the span
+</script>
 
 <script src="script.js"></script>
 </body>
