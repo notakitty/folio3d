@@ -13,10 +13,10 @@ body {
     color: #ffffff; /* Light text color for better readability on dark background */
 }
 
-/* Header styling - consistent with the main page */
+/* Header styling */
 header {
     background: #1f1f1f; /* Darker shade for the header background */
-    padding: 20px 0;
+    padding: 15px 0;
     position: fixed;
     width: 100%;
     top: 0;
@@ -30,7 +30,16 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: #ffffff; /* Light text color for better readability on dark background */
 }
+
+header h1 {
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    color: #ffffff; /* Light text color */
+    text-decoration: none;
+}
+
 header a {
     text-decoration: none;
     font-family: 'Yu Gothic UI Semibold', sans-serif;
