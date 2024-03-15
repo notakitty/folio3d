@@ -2,7 +2,7 @@
 
 This is the repository for [folio3d], a personal project.
 
-A simple and easy to set up portfolio template for your picture stuff.
+Simple portfolio template for your picture stuff.
 
 ## Features ✨
 
@@ -12,7 +12,7 @@ A simple and easy to set up portfolio template for your picture stuff.
 - dark mode because I love your retinas!
 - more features coming soon! (haha jk)
 
-## Getting Started 🚀
+## DIY 🚀
 
 To get started with this project, clone the repository and follow these steps:
 
@@ -22,7 +22,7 @@ To get started with this project, clone the repository and follow these steps:
 
 ## Requirements 🛠️
 
-- github pages if you don't want to deploy this some other way
+- github pages or other platform to deploy
 
 ## Installation 📌
 
