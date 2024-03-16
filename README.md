@@ -30,3 +30,13 @@ To get started with this project, clone the repository and follow these steps:
 git clone https://github.com/notakitty/folio3d.git
 cd folio3d
 # Read the instructions if you want to
+```
+
+## todo
+- add link to sauce
+- fix KR image being wrong version
+- think of proper croppin
+- lightbox docs???? link then read and fix
+- why load so slow :( need better sln
+- need better assets for front
+- where pepper art??? allowed? new bsky link?
