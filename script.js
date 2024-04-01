@@ -1,3 +1,25 @@
+// Carousel functionality
+document.addEventListener('DOMContentLoaded', function() {
+    let currentIndex = 0;
+    const slides = document.querySelectorAll('.carousel-item');
+    const totalSlides = slides.length;
+
+    document.querySelector('.carousel-control-next').addEventListener('click', function() {
+        slides[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + 1) % totalSlides;
+        slides[currentIndex].classList.add('active');
+    });
+
+    document.querySelector('.carousel-control-prev').addEventListener('click', function() {
+        slides[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        slides[currentIndex].classList.add('active');
+    });
+
+    // ... existing lightbox functionality ...
+});
+
+
 // script.js
 
 document.addEventListener('DOMContentLoaded', function() {

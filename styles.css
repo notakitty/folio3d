@@ -11,6 +11,8 @@ body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     background-color: #1c1c1c; /* Dark background for the body */
     color: #ffffff; /* Light text color for better readability on dark background */
+    height: 100%;
+    margin: 0;
 }
 
 /* Header styling */
@@ -63,6 +65,88 @@ nav a:hover {
     color: #ffffff; /* Bright color for link hover state */
 }
 
+.navbar {
+    background-color: #000; /* Use a dark background */
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    /* ... additional styles ... */
+}
+
+.navbar-links {
+    display: flex;
+    list-style: none;
+    /* ... additional styles ... */
+}
+.navbar-links a {
+    color: #fff; /* Navbar links color */
+    margin-left: 20px;
+    text-transform: uppercase;
+    /* ... additional styles ... */
+}
+
+/* Carousel styles */
+.carousel {
+    position: relative;
+    /* ... additional styles ... */
+}
+.carousel-inner {
+    width: 100%;
+    /* ... additional styles ... */
+}
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    /* ... additional styles ... */
+}
+.carousel-item {
+    display: none; /* Hide all items initially */
+    /* ... additional styles ... */
+}
+.carousel-item.active {
+    display: block; /* Show the active item */
+    /* ... additional styles ... */
+}
+/* Carousel control styles */
+.carousel-control-prev, .carousel-control-next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px; /* Adjust as needed */
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    /* Use background images or text for the buttons */
+}
+
+.carousel-control-prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.carousel-control-next {
+    right: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+/* Add hover effects for the buttons */
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* If you prefer text, ensure it is centered */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
 /* Ensuring all potentially unstyled elements have dark backgrounds */
 main, footer {
     background-color: #3A3F44; /* Matching the body's background color */
@@ -76,6 +160,10 @@ main, footer {
 main {
     padding-top: 80px; /* Offset for fixed header */
     padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* ... additional styles ... */
 }
 
 .grid-container {
@@ -91,7 +179,7 @@ main {
 .grid-item {
     background: #2a2a2a; /* Dark grey background for grid items */
     transition: transform 0.3s;
-    height: 300px; /* Fixed height for the grid items */
+    height: 400px; /* Fixed height for the grid items */
     overflow: hidden; /* Ensures that images don't overflow their grid item */
 }
 
