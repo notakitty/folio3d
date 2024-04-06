@@ -35,8 +35,7 @@ cd folio3d
 ## todo
 - add link to sauce
 - fix KR image being wrong version
-- think of proper croppin
-- lightbox docs???? link then read and fix
-- why load so slow :( need better sln
-- need better assets for front
-- where pepper art??? allowed? new bsky link?
+- lightbox docs???? link then read and fix. clicking stretches and text is fucked
+- why load so slow :( check performance and test
+- add VotV art somewhere
+- make navbar look less shit
