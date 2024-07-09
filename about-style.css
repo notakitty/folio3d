@@ -47,13 +47,9 @@ header a {
 }
 /* Navbar Styles */
 nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav li {
-    display: inline-block; /* Or use 'flex' on the 'ul' for a flexbox layout */
-    margin-right: 20px; /* Space between the items */
+    list-style: none;
+    display: flex;
+    gap: 15px;
 }
 
 nav a {
@@ -64,7 +60,27 @@ nav a {
 }
 
 nav a:hover {
-    color: #4da3ff; /* Only text color changes to blue on hover */
+    color: #ffffff; /* Bright color for link hover state */
+}
+
+.navbar {
+    background-color: #000; /* Use a dark background */
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    /* ... additional styles ... */
+}
+
+.navbar-links {
+    display: flex;
+    list-style: none;
+    /* ... additional styles ... */
+}
+.navbar-links a {
+    color: #fff; /* Navbar links color */
+    margin-left: 20px;
+    text-transform: uppercase;
+    /* ... additional styles ... */
 }
 
 
