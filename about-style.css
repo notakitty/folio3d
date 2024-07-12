@@ -1,5 +1,3 @@
-/* about-styles.css */
-
 /* Resetting inherited styles */
 * {
     margin: 0;
@@ -11,6 +9,17 @@ body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     background-color: #1c1c1c; /* Dark background for the body */
     color: #ffffff; /* Light text color for better readability on dark background */
+}
+
+/* All anchor tags within the body, not just the header or footer */
+body a {
+    text-decoration: none;
+    color: red; /* Set link color to red */
+    transition: color 0.3s;
+}
+
+body a:hover {
+    color: darkred; /* Darker red for hover state */
 }
 
 /* Header styling */
@@ -37,14 +46,13 @@ header h1 {
     font-size: 1.5em;
     letter-spacing: 1px;
     color: #ffffff; /* Light text color */
-    text-decoration: none;
 }
 
+/* Overriding previous header a styles */
 header a {
-    text-decoration: none;
-    font-family: 'Yu Gothic UI Semibold', sans-serif;
-    color: #ffffff; /* Light text color */
+    color: #ffffff; /* Ensure header links remain white */
 }
+
 /* Navbar Styles */
 nav ul {
     list-style: none;
@@ -56,7 +64,6 @@ nav a {
     text-decoration: none;
     color: #cccccc; /* Lighter text color for links */
     font-size: 0.9em;
-    transition: color 0.3s;
 }
 
 nav a:hover {
@@ -76,13 +83,13 @@ nav a:hover {
     list-style: none;
     /* ... additional styles ... */
 }
+
 .navbar-links a {
     color: #fff; /* Navbar links color */
     margin-left: 20px;
     text-transform: uppercase;
     /* ... additional styles ... */
 }
-
 
 /* Responsive navbar adjustments */
 @media (max-width: 600px) {
@@ -122,28 +129,9 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-}
-
-/* Responsive adjustments */
-@media only screen and (max-width: 600px) {
-    .header-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    /* Additional responsive styling for the About page as needed */
-}
-/* Footer styling */
-footer {
-    background: #1a1a1a; /* Dark background for the footer */
-    padding: 10px 0;
     display: flex;
     justify-content: center;
-    text-align: center;
     align-items: center;
-    position: relative;
-    bottom: 0;
-    width: 100%;
 }
 
 footer a{
@@ -155,4 +143,13 @@ footer a{
 
 footer a:hover {
     color: #ffffff; /* Bright color for link hover state */
+}
+
+@media only screen and (max-width: 600px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Additional responsive styling for the About page as needed */
 }
