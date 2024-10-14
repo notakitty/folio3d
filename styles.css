@@ -48,6 +48,14 @@ header a {
     color: #ffffff; /* Light text color */
 }
 
+header h1:hover {
+    color: #9932cc; /* DarkOrchid */
+}
+
+a:hover {
+    color: #9932cc; /* DarkOrchid */
+}
+
 nav ul {
     list-style: none;
     display: flex;
@@ -272,4 +280,44 @@ footer a:hover {
     .lightbox-content {
         width: 32%;
     }
+}
+
+/* General section styling */
+section {
+    margin-bottom: 2em;
+    padding: 0 2em;
+}
+
+/* Title consistency for all headings */
+section h1, section h2 {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    color: #ffffff;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Match the rest of the page */
+    font-size: 1.5em;
+}
+
+/* Consistent link and hover styling */
+section a {
+    text-decoration: none;
+    color: #BA55D3; /* Match link color with the general site's link color */
+    transition: color 0.3s;
+}
+
+section a:hover {
+    color: #9932cc; /* DarkOrchid hover color for consistency */
+}
+
+/* Uniform list styling for About and Contact sections */
+section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+li {
+    margin-bottom: 0.5em;
+    font-size: 1em;
+    line-height: 1.6; /* Improved readability */
 }

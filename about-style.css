@@ -1,155 +1,60 @@
-/* Resetting inherited styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* General typography improvements */
 body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background-color: #1c1c1c; /* Dark background for the body */
-    color: #ffffff; /* Light text color for better readability on dark background */
+    background-color: #1c1c1c;
+    color: #ffffff;
+    line-height: 1.8; /* Improved line height */
+    font-size: 16px; /* Slightly larger font size for better readability */
 }
 
-/* All anchor tags within the body, not just the header or footer */
+/* Link styling and hover accent */
 body a {
     text-decoration: none;
-    color: red; /* Set link color to red */
+    color: #BA55D3; /* Original link color */
     transition: color 0.3s;
 }
 
 body a:hover {
-    color: darkred; /* Darker red for hover state */
+    color: #9932cc; /* DarkOrchid for hover state */
 }
 
-/* Header styling */
-header {
-    background: #1f1f1f; /* Darker shade for the header background */
-    padding: 15px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
+/* Section styles */
+section {
+    margin-bottom: 2em; /* Consistent spacing between sections */
+    padding: 0 2em; /* Padding for better readability */
 }
 
-.header-content {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #ffffff; /* Light text color for better readability on dark background */
+section h1, section h2 {
+    margin-bottom: 0.5em;
+    color: #ffffff;
 }
 
-header h1 {
-    font-size: 1.5em;
-    letter-spacing: 1px;
-    color: #ffffff; /* Light text color */
+ul {
+    list-style-type: disc;
+    padding-left: 20px; /* Indent list items */
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
-/* Overriding previous header a styles */
-header a {
-    color: #ffffff; /* Ensure header links remain white */
+li {
+    margin-bottom: 0.5em;
 }
 
-/* Navbar Styles */
+/* Header, footer and navigation refinements */
+header, footer {
+    padding: 20px;
+    text-align: center;
+}
+
 nav ul {
     list-style: none;
     display: flex;
-    gap: 15px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #cccccc; /* Lighter text color for links */
-    font-size: 0.9em;
-}
-
-nav a:hover {
-    color: #ffffff; /* Bright color for link hover state */
-}
-
-.navbar {
-    background-color: #000; /* Use a dark background */
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-    /* ... additional styles ... */
-}
-
-.navbar-links {
-    display: flex;
-    list-style: none;
-    /* ... additional styles ... */
-}
-
-.navbar-links a {
-    color: #fff; /* Navbar links color */
-    margin-left: 20px;
-    text-transform: uppercase;
-    /* ... additional styles ... */
-}
-
-/* Responsive navbar adjustments */
-@media (max-width: 600px) {
-    nav li {
-        display: block; /* Stack the items vertically on small screens */
-        margin-bottom: 10px; /* Space between the items */
-    }
-}
-
-/* Main content styling for the About page */
-main {
-    padding-top: 80px; /* Offset for fixed header */
-    padding-bottom: 20px;
-    background-color: #3A3F44; /* Matching the body's background color */
-}
-
-/* Increased spacing for section headings and paragraphs */
-section h1,
-section h2 {
-    margin-top: 1em; /* Increased top margin for headings */
-    margin-bottom: 0.5em; /* Increased bottom margin for headings */
-    color: #ffffff; /* Ensuring headings are visible on dark background */
-    font-size: 1.5em; /* Consistent font size with the main page */
-}
-
-section p {
-    margin-top: 0.5em; /* Increased top margin for paragraphs */
-    margin-bottom: 1em; /* Increased bottom margin for paragraphs */
-    line-height: 1.6; /* Improved line height for readability */
-}
-
-/* Footer styling - consistent with the main page */
-footer {
-    background: #1a1a1a; /* Dark background for the footer */
-    padding: 10px 0;
-    text-align: center;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    display: flex;
     justify-content: center;
-    align-items: center;
+    gap: 20px;
 }
 
-footer a{
-    font-size: 1.1em;
-    text-decoration: none;
-    color: #cccccc; /* Lighter text color for links */
-    margin-right: 20px;
-}
-
-footer a:hover {
-    color: #ffffff; /* Bright color for link hover state */
-}
-
-@media only screen and (max-width: 600px) {
-    .header-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    /* Additional responsive styling for the About page as needed */
+footer {
+    background: #1a1a1a;
+    padding: 20px;
+    font-size: 0.9em;
 }
